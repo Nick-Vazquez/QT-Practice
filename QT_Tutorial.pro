@@ -11,3 +11,6 @@ SOURCES += \
 
 HEADERS += \
     window.h
+
+DISTFILES += \
+    .gitignore
