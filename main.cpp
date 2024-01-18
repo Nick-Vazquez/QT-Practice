@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QScreen>
 
-#include "window.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -13,9 +13,9 @@ int main(int argc, char *argv[])
     int window_height 	= screenGeometry.height() / 2;
     int window_width 	= screenGeometry.width() / 2;
 
-    Window window;
-    window.setFixedSize(window_width, window_height);
-
+    MainWindow window;
+    // window.setFixedSize(window_width, window_height);
+    window.resize(window_width, window_height);
 
     window.show();
     return app.exec();
